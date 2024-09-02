@@ -12,6 +12,26 @@ I ended up choosing VOO, an etf from Vanguard that tracks the S&P 500 because of
 I skipped analyzing them because it would be a repeat of analyzing US etfs which wouldn't add much to the analysis. Moving forward, I wanted to calculate my expected compound growth based on an initial investment and monthly contributions. 
 This can be found in the notebook titled [retirement.ipynb](https://github.com/JasonSTLee/retirement-analysis/blob/main/retirement.ipynb). At the very bottom I plotted 2 bar charts, one for showing the year over year growth with a stacked bar chart and another to show my gross and net amount after taxes.
 
-## Lessons Learned:
 
-The biggest lesson I learned was utilizing different tools to accomplish the project, even if it meant switching from Python to SQL, and back to Python. Whichever tech got the job done efficiently and accurately, was the tech of choice. 
+## Why VOO?:
+
+### Deviation Percentage Calculation
+
+There are a few reason I chose VOO over the other US based etfs. Below is a screenshot of what I call "Deviation Percentage" where I calculated the average yoy return of the etfs, and their top 20 stocks based on portfolio weight. I then subracted the stocks return by the etf return, divide that by 
+etf return to get the percentage. The code can be found in the file called [sql.sql](https://github.com/JasonSTLee/Retirement-Analysis/blob/main/sql.sql). A lower deviation percentage indicates the etf performance is more closely aligned with the performance of its top holdings; I interpreted that
+as a sign of lower risk and volatility.
+![Deviation of top 20 stocks](https://github.com/user-attachments/assets/473fc30e-bcda-462e-95d2-614d80484205)
+
+### Tracking Error
+
+Speaking of volatility and performance alignment. Where "Deviation Percentage" tracked the etf's stocks holdings, tracking error tracks the index that the etf follows. This is ' a statistical measure that quantifies the volatility of the difference in returns between the ETF and its underlying index'.
+Using, aggregates and standard deviation, tracking error aims to show how consistent an etf is with tracking the index's performance, a lower tracking error the bettwe. Similar to "Deviation Percentage", VOO has the lowest tracking error.
+![Tracking Error](https://github.com/user-attachments/assets/4757f103-17a0-418b-af5c-a995ea60f2ea)
+
+### Industry Makeup
+
+To continue with risk reduction, I then found the industry makeup of each etf by finding the distinct company symbol, reading that csv into Python and extracing the industry data with yfinance and loops. Code can by found in the file [US_etfs.ipynb](https://github.com/JasonSTLee/Retirement-Analysis/blob/main/US_etfs.ipynb). In the stacked bar graph below, only the top 20 industries based on weight are visuzlied because I wanted to see how concentrated the top 20 are. VOO is in the middle compared with the other etfs, only being beaten by a total US market etf, and international etf. VOO is again the winner here.
+![Industry Makeup per ETF](https://github.com/user-attachments/assets/391b936f-ee70-476d-b9f7-17a4ce3d4914)
+
+
+For these reasons, I have chosen VOO to chose as my US based etf to invest in for my retirement plan.
