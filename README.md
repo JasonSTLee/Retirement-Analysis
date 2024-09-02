@@ -41,6 +41,8 @@ For these reasons, I have chosen VOO to chose as my US based etf to invest in fo
 As mentioned in the beginning, I also chose AVUV (small cap US based etf) and VXUS (international etf, excluding US) as the other etfs to invest in. AVUV has strong yoy returns and a diverse industry makeup that doesn't include tech in their top 20 as shown below. This was particularly attractive to me because VOO has a fair bit of tech concentration.
 ![AVUV top 20 industries](https://github.com/user-attachments/assets/7df5ad61-313c-48bb-a00f-4121e2730491)
 After finding the avg yoy return of AVUV and VXUS I was able to calculate the retirement amount based on my personal allocation of each etf, monthly contributions, initial investment and capital gains tax. Below is a screenshot of the yoy return. This shows how important compound growth is to a retirement portfolio, even the initial invesment and monthly contributions are relatively low. Calculations can be found in the file [retirement.ipynb](https://github.com/JasonSTLee/Retirement-Analysis/blob/main/retirement.ipynb). 
+
 ![Compound Growth](https://github.com/user-attachments/assets/0baa7739-c012-4f0f-b109-b843b4020fbe)
 I wanted to calculate the gross, taxed, and net amount as well. Information regarding capital gains tax in California can be found [here](https://smartasset.com/investing/california-capital-gains-tax).
+
 ![Net Amount](https://github.com/user-attachments/assets/7db786a4-d8af-4f85-b819-6d371860593c)
