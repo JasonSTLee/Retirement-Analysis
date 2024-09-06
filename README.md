@@ -2,11 +2,11 @@
 This project is all about extracting data from yfinance and etfdb.com and cleaning it using Python and SQL, then analyzing and visualizing the etfs onto Tableau. Link to the Tableau dashboard can be found [here](https://public.tableau.com/app/profile/jason.lee2654/viz/ETFResearchProject/Dashboard1). 
 The goal is to provide an example of how I used data analytic tools to solve a real life issue: how to plan for retirement.
 
+[Dashboard Link](https://public.tableau.com/app/profile/jason.lee2654/viz/ETFResearchProject/Dashboard1)
+
 ## How It's Made:
 
 **Tech used:** Python (libraries include Pandas, OS, time, matplotlib, and yfinance), PostgreSQL, and Tableau
-
-[Dashboard Link](https://public.tableau.com/app/profile/jason.lee2654/viz/ETFResearchProject/Dashboard1)
 
 I started off by reading articles and Reddit posts on most popular national ETFs and compiled a list of the most popular ones that tracked indexes and/or markets within the US. After that I was able to get information about the etf's holdings on etfdb.com and financial data on yfinance. 
 Once I finished gathering and cleaning the data, I calculated the tracking error, average yoy performance, industry makeup, and more on SQL and created tables for each output. Each table was then copied on CSVs using the PSQL tool to be later read onto Tableau where I visualized the data.
