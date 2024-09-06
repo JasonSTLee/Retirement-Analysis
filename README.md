@@ -5,6 +5,7 @@ The goal is to provide an example of how I used data analytic tools to solve a r
 ## How It's Made:
 
 **Tech used:** Python (libraries include Pandas, OS, time, matplotlib, and yfinance), PostgreSQL, and Tableau
+
 [Dashboard Link](https://public.tableau.com/app/profile/jason.lee2654/viz/ETFResearchProject/Dashboard1)
 
 I started off by reading articles and Reddit posts on most popular national ETFs and compiled a list of the most popular ones that tracked indexes and/or markets within the US. After that I was able to get information about the etf's holdings on etfdb.com and financial data on yfinance. 
