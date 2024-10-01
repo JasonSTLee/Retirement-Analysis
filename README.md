@@ -4,6 +4,10 @@ The goal is to provide an example of how I used data analytic tools to solve a r
 
 [Dashboard Link](https://public.tableau.com/app/profile/jason.lee2654/viz/ETFResearchProject/Dashboard1)
 
+# Retirement GUI
+As a side project to enhance my Python skills, I also created a GUI using Tkinter that allows users to fill in their stock preferences, monthly contributions and number of years to invest. Then users can calculate their expected return, based on average yoy growth (or decline), 
+before and after taxes (for the state of California).
+
 ## How It's Made:
 
 **Tech used:** Python (libraries include Pandas, OS, time, matplotlib, and yfinance), PostgreSQL, and Tableau
@@ -49,3 +53,8 @@ After finding the avg yoy return of AVUV and VXUS I was able to calculate the re
 I wanted to calculate the gross, taxed, and net amount as well. Information regarding capital gains tax in California can be found [here](https://smartasset.com/investing/california-capital-gains-tax).
 
 ![Net Amount](https://github.com/user-attachments/assets/7db786a4-d8af-4f85-b819-6d371860593c)
+
+# GUI Screenshot
+![Example](https://github.com/user-attachments/assets/5b513333-98d7-4a0e-817c-e805265cccfe)
+
+
